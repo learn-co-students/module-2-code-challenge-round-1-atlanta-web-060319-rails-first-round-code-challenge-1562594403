@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  resources :powers, only: [:index]
-  resources :heroines, only: [:index]  
-end
+  resources :powers
+  resources :heroines 
+
+  
+  
+  
+  get '/index', to: "heroines#index"
+  
+
+end 
